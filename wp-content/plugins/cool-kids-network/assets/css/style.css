@@ -1,1 +1,69 @@
 /* Custom Style */
+body {
+    background-color: #f4f4f4;
+    font-family: Arial, sans-serif;
+}
+
+.ckn-button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+}
+
+.ckn-button:hover {
+    background-color: #45a049;
+}
+
+.wp-element-button,button{
+    font-weight: 600;
+    line-height: 48px;
+    display: inline-block;
+    padding: 0 1.5em;
+    cursor: pointer;
+    -webkit-transition: .2s all ease-in-out;
+    transition: .2s all ease-in-out;
+    text-decoration: none !important;
+    text-transform: uppercase;
+    color: #5a4000;
+    border: 0;
+    border-radius: 40px;
+    background: #f7d070;
+    background-repeat: no-repeat;
+    font-size: 16px;
+    font-size: 1rem;
+    vertical-align: middle;
+}
+.wp-element-button:hover,button:hover{
+    color: rgb(39, 27.7333333333, 0);
+    outline: none;
+    -webkit-box-shadow: 0 0 0 2px #fff, 0 0 0 4px #f7d070;
+    box-shadow: 0 0 0 2px #fff, 0 0 0 4px #f7d070;
+}
+input{
+    font-size: inherit;
+    font-family: inherit;
+    padding: 5px 4px;
+    letter-spacing: normal;
+    vertical-align: middle;
+}
+main .wp-block-group{
+    max-width: 50%;
+    margin: 0 auto !important;
+    background-color: #fff;
+    box-shadow: 0px 8px 15px rgba(97, 109, 190, .1);
+}
+main .wp-block-group table{
+    background-color: #f0f4f8;
+    border: none;;
+}
+main .wp-block-group table tr th,
+main .wp-block-group table tr td{
+    padding: 10px 20px;
+    text-align: left;
+    font-size: 16px;
+}
+.user-data p{
+    font-size: 16px;
+}
