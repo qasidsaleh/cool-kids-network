@@ -17,6 +17,7 @@ define('CKN_PLUGIN_URL', plugin_dir_url(__FILE__));
 
 // Include core classes
 require_once CKN_PLUGIN_DIR . 'includes/class-role-handler.php';
+require_once CKN_PLUGIN_DIR . 'includes/class-character-data.php';
 require_once CKN_PLUGIN_DIR . 'includes/class-shortcodes.php';
 
 // Plugin activation
@@ -32,6 +33,7 @@ register_deactivation_hook(__FILE__, function () {
 
 // Initialize plugin
 add_action('plugins_loaded', function () {
+    new \CKN\CharacterData();
     new \CKN\Shortcodes();
 });
 
