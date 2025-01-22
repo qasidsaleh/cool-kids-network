@@ -15,14 +15,18 @@ if (!defined('ABSPATH')) {
 define('CKN_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('CKN_PLUGIN_URL', plugin_dir_url(__FILE__));
 
+// Include core classes
+require_once CKN_PLUGIN_DIR . 'includes/class-role-handler.php';
+
 // Plugin activation
 register_activation_hook(__FILE__, function () {
-
+    \CKN\RoleHandler::add_roles();
+    flush_rewrite_rules();
 });
 
 // Plugin deactivation
 register_deactivation_hook(__FILE__, function () {
-    
+    \CKN\RoleHandler::remove_roles();
 });
 
 // Include Stylesheet
