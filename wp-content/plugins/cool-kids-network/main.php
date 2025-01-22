@@ -24,3 +24,10 @@ register_activation_hook(__FILE__, function () {
 register_deactivation_hook(__FILE__, function () {
     
 });
+
+// Include Stylesheet
+function ckn_enqueue_styles() {
+    // Enqueue the custom stylesheet for the plugin
+    wp_enqueue_style('ckn-plugin-style', plugin_dir_url(__FILE__) . 'assets/css/style.css');
+}
+add_action('wp_enqueue_scripts', 'ckn_enqueue_styles');
