@@ -14,3 +14,13 @@ if (!defined('ABSPATH')) {
 // Define plugin constants
 define('CKN_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('CKN_PLUGIN_URL', plugin_dir_url(__FILE__));
+
+// Plugin activation
+register_activation_hook(__FILE__, function () {
+
+});
+
+// Plugin deactivation
+register_deactivation_hook(__FILE__, function () {
+    
+});
