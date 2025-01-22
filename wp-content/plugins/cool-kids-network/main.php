@@ -17,6 +17,7 @@ define('CKN_PLUGIN_URL', plugin_dir_url(__FILE__));
 
 // Include core classes
 require_once CKN_PLUGIN_DIR . 'includes/class-role-handler.php';
+require_once CKN_PLUGIN_DIR . 'includes/class-shortcodes.php';
 
 // Plugin activation
 register_activation_hook(__FILE__, function () {
@@ -27,6 +28,11 @@ register_activation_hook(__FILE__, function () {
 // Plugin deactivation
 register_deactivation_hook(__FILE__, function () {
     \CKN\RoleHandler::remove_roles();
+});
+
+// Initialize plugin
+add_action('plugins_loaded', function () {
+    new \CKN\Shortcodes();
 });
 
 // Include Stylesheet
