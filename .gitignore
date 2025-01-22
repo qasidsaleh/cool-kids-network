@@ -1,0 +1,45 @@
+# Ignore WordPress core files
+/wp-admin/
+/wp-includes/
+
+# Ignore WordPress content directories
+wp-content/uploads/
+wp-content/cache/
+wp-content/backups/
+
+# Ignore WordPress debug logs and other system logs
+wp-content/debug.log
+
+# Ignore system-specific files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE-specific files
+.idea/
+.vscode/
+
+# Ignore temporary files created by Composer, npm, or yarn
+/vendor/
+/node_modules/
+/package-lock.json
+/yarn.lock
+npm-debug.log
+composer.lock
+
+# Ignore WordPress config files (do not track wp-config.php)
+wp-config.php
+
+# Ignore test or coverage files
+*.log
+*.sql
+*.sqlite
+phpunit.xml
+*.phpunit.result.cache
+test/
+
+# Ignore environment variables file
+.env
+
+# Ignore built JavaScript and CSS files
+*.min.js
+*.min.css
